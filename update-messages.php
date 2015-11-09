@@ -16,5 +16,3 @@ if ($username == "" || $message == "") {
 $result = $db->prepare("INSERT INTO messages VALUES('',?,?)");
 $result->bind_param("ss", $username, $message);
 $result->execute();
-
-echo "test"

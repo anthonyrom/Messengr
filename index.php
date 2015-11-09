@@ -205,6 +205,10 @@
             return "";
         }
 
+        function update() {
+            
+        }
+        
         function sendMsg() {
             var message = msgInput.value;
             if (message != "") {
@@ -227,9 +231,6 @@
             }
         }
 
-        function update() {
-
-        }
     </script>
 </body>
 
