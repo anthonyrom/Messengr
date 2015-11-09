@@ -1,17 +1,20 @@
-<?php
-$db = new mysqli("localhost", "", "", "");
+<?php 
+
+$db = new mysqli("localhost","awromvwi_a","HRzC5[M.tpKM","awromvwi_messengr");
 
 if ($db->connect_error) {
-	die("Sorry, there was a problem connecting to our database.");
+    die("Couldn't connect to DB");
 }
 
 $username = stripslashes(htmlspecialchars($_GET['username']));
 $message = stripslashes(htmlspecialchars($_GET['message']));
 
-if ($message == "" || $username == "") {
-	die();
+if ($username == "" || $message == "") {
+    die();
 }
 
 $result = $db->prepare("INSERT INTO messages VALUES('',?,?)");
 $result->bind_param("ss", $username, $message);
 $result->execute();
+
+echo "test"
