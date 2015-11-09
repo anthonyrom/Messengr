@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>Messenger</title>
+	<title>Messengr</title>
 	<style type="text/css">
 	html {
 		height: 100%;
