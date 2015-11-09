@@ -134,7 +134,7 @@
 <p class="buttonp"><button onclick="chooseusername()">Choose Username</button></p>
 </div>
 <div class="msg-container">
-	<div class="header">Messenger</div>
+	<div class="header">Messengr</div>
 	<div class="msg-area" id="msg-area"></div>
 	<div class="bottom"><input type="text" name="msginput" class="msginput" id="msginput" onkeydown="if (event.keyCode == 13) sendmsg()" value="" placeholder="Enter your message here ... (Press enter to send message)"></div>
 </div>
