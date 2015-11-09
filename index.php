@@ -206,9 +206,42 @@
         }
 
         function update() {
+            /*
+            var xmlhttp = new XMLHttpRequest();
+            var username = getCookie("messengrUname");
+            var output = "";
+
+            xmlhttp.onreadystatechange = function() {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    var response = xmlhttp.responseText.split("\n");
+                    var rl = response.length;
+                    var item = "";
+
+                    for (var i = 0; i < rl; i++) {
+                        item = reponse[i].split("\\");
+                        if (item[1] != undefined) {
+                            if (item[0] == username) {
+                                // Messages sent by user
+                                output += "<div class=\"msgc\" style=\"margin-bottom: 30px;\"> <div class=\"msg msgFrom\">" + item[1] + "</div> <div class=\"msgArr msgArrFrom\"></div> <div class=\"msgSentBy msgSentByFrom\">Sent by " + item[0] + "</div> </div>";
+                            } else {
+                                // Messages sent by other person
+                                output += "<div class=\"msgc\" style=\"margin-bottom: 30px;\"> <div class=\"msg msgFrom\">" + item[1] + "</div> <div class=\"msgArr msgArrFrom\"></div> <div class=\"msgSentBy msgSentByFrom\">Sent by " + item[0] + "</div> </div>";
+                            }
+                        }
+                    }
+
+                    msgArea.innerHTML = output;
+                    msgArea.scrollTop = msgArea.scrollHeight;
+                    
+                }
+            }
+
+            xmlhttp.open("GET", "get-messages.php?username=" + username + "&message=" + message, true);
+            xmlhttp.send();
             
+            */
         }
-        
+
         function sendMsg() {
             var message = msgInput.value;
             if (message != "") {
@@ -230,7 +263,9 @@
 
             }
         }
-
+        
+        // setInterval(function() { update(); }, 2500);
+        
     </script>
 </body>
 
